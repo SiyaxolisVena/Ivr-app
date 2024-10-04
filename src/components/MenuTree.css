@@ -17,6 +17,7 @@
   width: 120px;
   text-align: center;
 }
+
 .tree-node span{
   font: normal normal normal 10px/13px Montserrat;
   letter-spacing: 0px;
@@ -49,6 +50,7 @@
   margin-bottom: 0px;
   margin-top: 0px;
 }
+
 .connector-horizontal{
   height: 2px;
   width: 53%;
@@ -65,10 +67,12 @@
   align-items: flex-start;
   gap: 300px;
 }
+
 .node-container{
   display: flex;
   flex-direction: column;
 }
+
 .node-container::before{
   content:'';
   display: block;
@@ -79,6 +83,7 @@
   background-color: #ccc;
   margin: 0 auto;
 }
+
 .menu {
   margin-bottom: 10px;
 }
@@ -87,18 +92,21 @@
   margin-bottom: 10px;
   text-align: center;
 }
+
 .menu-header h3{
   font: normal normal bold 10px/13px Montserrat;
   letter-spacing: 0px;
   color: #0B1C34;
   margin: 0 !important;
 }
+
 .menu-header p{
   font: normal normal normal 10px/13px Montserrat;
   letter-spacing: 0px;
   color: #0B1C34;
   margin: 0 !important;
 }
+
 .menu-targets {
   display: flex;
   flex-direction: column;
@@ -116,16 +124,18 @@
   width: 120px;
   margin-bottom: 0px;
 }
+
 .target-number img{
   width: 10px;
-
 }
+
 .target-number p{
   font: normal normal normal 10px/13px Montserrat;
   letter-spacing: 0px;
   color: #0B1C34 !important;
   margin: 0;
 }
+
 .no-target-number {
   display: flex;
   justify-content: center;
@@ -133,11 +143,25 @@
 }
 
 .save-button {
-  background-color: #4caf50; 
-  color: white;
-  padding: 10px 20px;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #E0E0E0 0% 0% no-repeat padding-box;
+  border-radius: 24px;
+  padding: 5px 10px;
   border: none;
-  border-radius: 5px;
-  margin-top: 30px;
+  font: normal normal 600 13px/67px Montserrat;
+  font-weight: 600;
+  line-height: 20px;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  letter-spacing: 0px;
   cursor: pointer;
+  transition: background-color 0.3s ease;
 }
+
+.save-button:hover {
+  background-color: #C0C0C0; 
+}
+
+

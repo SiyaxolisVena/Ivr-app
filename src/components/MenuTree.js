@@ -4,7 +4,6 @@ import PhoneIcon from '../assets/call-icon.svg';
 import DialPad from '../assets/dial-pad-icon.svg'
 
 const MenuTree = ({ greetingMessage, menuOptions }) => {
-    const [menuLength, setMenuLength] = useState(0)
   return (
     <div className="menu-tree">
       {greetingMessage && 
@@ -51,7 +50,7 @@ const MenuTree = ({ greetingMessage, menuOptions }) => {
           </div>
         </>
       )}
-      {/* <button className="save-button">SAVE</button> */}
+      <button className="save-button">SAVE</button>
     </div>
   );
 };

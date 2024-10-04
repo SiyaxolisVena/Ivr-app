@@ -54,9 +54,10 @@ const MenuOption = ({ index, menu, menuOptions, setMenuOptions }) => {
         />
       ))}
       {menu.targetNumbers.length < 5 && (
-        <Button variant="text" onClick={addTargetNumber}>
-          Add Target Number
-        </Button>
+          <button className="add-target-button" onClick={addTargetNumber}>
+          <span className="circle">+</span>
+          ADD TARGET NUMBERS
+        </button>
       )}
     </div>
   );
